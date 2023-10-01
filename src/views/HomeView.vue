@@ -1,25 +1,18 @@
 <script setup>
-import ScanReceipt from '../components/ScanReceipt.vue'
+import SampleComponent from '../components/SampleComponent.vue'
 </script>
 
 <template>
   <div class="frame">
     <nav>
-      <img alt="Dotch logo" src="../assets/logo.svg" />
+      <img alt="App logo" src="../assets/logo.svg" />
     </nav>
     <main>
       <Transition name="fade" appear>
-      <div><ScanReceipt /></div>
+      <div><SampleComponent /></div>
       </Transition>
     </main>
     <footer>
-      <Transition name="slide-up" tag="footer" appear>
-      <div>
-        <a href="/about">About</a>
-        <div class="divider"></div>
-        <a href="/help">Help</a>
-      </div>
-      </Transition>
     </footer>
   </div>
 </template>
